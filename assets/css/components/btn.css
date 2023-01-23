@@ -1,0 +1,44 @@
+/* ?============= BTN.CSS =============?*/
+
+/* ?==== copyright 2023 Muhammad Usama (Alpha97) =====?*/
+
+.btn {
+  background-color: var(--pink-light);
+  font-size: var(--fs-14);
+  font-weight: var(--fw-500);
+  text-transform: uppercase;
+  max-width: max-content;
+  letter-spacing: 2px;
+  padding: 10px 22px;
+  box-shadow: 6px 6px 0 -1px var(--shadow-color, var(--jet));
+  transition: var(--transition-1);
+}
+
+.btn:is(:hover, :focus-visible) {
+  background-color: var(--hover-bg, var(--jet));
+  box-shadow: 5px 5px 0 -2px var(--hover-shadow-color, var(--pink-light));
+}
+
+.btn-primary,
+.btn-secondary {
+  color: var(--white);
+}
+
+.btn-secondary {
+  background-color: var(--jet);
+  --shadow-color: var(--pink-light);
+  --hover-bg: var(--pink-light);
+  --hover-shadow-color: var(--jet);
+}
+
+.btn-tertiary {
+  color: var(--jet);
+  background-color: var(--maximum-pink-light);
+  --shadow-color: var(--pink-light);
+  --hover-bg: var(--pink-light);
+  --hover-shadow-color: var(--maximum-pink-light);
+}
+
+.btn-tertiary:is(:hover, :focus) {
+  color: var(--white);
+}
